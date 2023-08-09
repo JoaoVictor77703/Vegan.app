@@ -12,7 +12,7 @@ public class Filmes {
     //criar o contrutor comparando alt+insert
 
 
-    public Filmes(String titulo, String descriçao, String categoria, String imagem) {
+    public Filmes(String titulo, String descriçao, String categoria, int imagem) {
         this.titulo = titulo;
         this.descriçao = descriçao;
         this.categoria = categoria;

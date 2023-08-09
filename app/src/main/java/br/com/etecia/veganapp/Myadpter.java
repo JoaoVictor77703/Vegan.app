@@ -1,6 +1,7 @@
 package br.com.etecia.veganapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,12 +48,19 @@ public class Myadpter extends RecyclerView.Adapter<Myadpter.ViewHolder> {
         holder.idTituloFilmes.setText(lstFilmes.get(position).getTitulo());
         holder.idImagemFilmes.setImageResource(lstFilmes.get(position).getImagem());
 
+        holder.idCardFilmes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent()
+            }
+        });
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstFilmes.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
